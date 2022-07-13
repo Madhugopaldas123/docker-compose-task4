@@ -1,6 +1,6 @@
 version: "3" 
 services: 
-  10.11.0.164: 
+  sonar-server: 
     image: sonarqube:8.9.1-community 
     ports: 
       - "9020:9000" 
@@ -11,4 +11,4 @@ services:
     context: . 
     dockerfile: Dockerfile 
     depends_on: 
-      - 10.11.0.164
+      - sonar-server
