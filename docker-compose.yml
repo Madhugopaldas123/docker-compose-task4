@@ -8,7 +8,7 @@ services:
   sonar-scanner: 
     image: maven:3.6.3-openjdk-8  
     build: 
-    context: . 
-    dockerfile: "Dockerfile"
+      context: . 
+      dockerfile: Dockerfile
     depends_on: 
       - sonar-server
