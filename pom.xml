@@ -63,7 +63,22 @@
             <scope>test</scope>
         </dependency>
     </dependencies> 
-  <build>  
+  <build> 
+<repository>
+                <id>1_maven.apache.org</id>
+                <releases>  <enabled>true</enabled>  </releases>
+                <snapshots> <enabled>true</enabled> </snapshots>
+                <url>https://repo.maven.apache.org/maven2</url>
+                <layout>default</layout>
+            </repository>
+
+            <repository>
+                <id>2_maven.oracle.com</id>
+                <releases>  <enabled>true</enabled>  </releases>
+                <snapshots> <enabled>false</enabled> </snapshots>
+                <url>https://maven.oracle.com</url>
+                <layout>default</layout>
+            </repository>
  <plugins> 
  <plugin> 
  <groupId>org.sonarsource.scanner.maven</groupId> 
