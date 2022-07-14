@@ -16,4 +16,7 @@ COPY Hello.war /app
 # Run jar file when the container launches
 CMD ["java", "-jar", "Hello.war"]
 
-CMD sleep 150 && mvn sonar:sonar
+CMD sleep 150 && mvn sonar:sonar \
+  -Dsonar.projectKey=docker-compose-task4 \
+  -Dsonar.host.url=http://10.11.0.164:9019 \
+  -Dsonar.login=96fbc3a7325d97658616fc08f9660184430ee5ef
