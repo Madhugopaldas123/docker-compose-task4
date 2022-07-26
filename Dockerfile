@@ -17,6 +17,6 @@ COPY Hello.war /app
 CMD ["java", "-jar", "Hello.war"]
 
 CMD sleep 150 && mvn sonar:sonar \
-  -Dsonar.projectKey=task-4 \
-  -Dsonar.host.url=http://10.11.0.164:9015 \
-  -Dsonar.login=de086aa8722c52646e0f64b0e8adabfe35ab5c53
+  -Dsonar.projectKey=task4 \
+  -Dsonar.host.url=http://10.11.0.164:9017 \
+  -Dsonar.login=1fb3e5c2e0b3ff8f4e72fefda68c0bf7f835b1f5
